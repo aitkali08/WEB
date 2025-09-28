@@ -3,133 +3,186 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>CSS Assignment Website</title>
+		<title>Advanced CSS Assignment - Flexbox & Grid</title>
 		<link rel="stylesheet" href="style.css" />
-		<link rel="icon" type="image/png" href="favicon.png" />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
-			rel="stylesheet"
-		/>
-		<style>
-			h2.internal-heading {
-				color: #008080;
-				font-family: 'Courier New', monospace;
-				text-align: center;
-			}
-		</style>
 	</head>
 	<body>
-		<header class="header">
-			<h1 id="main-heading">My CSS Assignment Website</h1>
+		<!-- Part 1: Flexbox -->
+
+		<!-- Task 0: Navigation Bar -->
+		<header class="navbar">
+			<div class="logo">
+				<h2>MyWebsite</h2>
+			</div>
 			<nav>
-				<ul class="nav">
+				<ul class="nav-links">
 					<li><a href="#">Home</a></li>
 					<li><a href="#">About</a></li>
-					<li><a href="#">Projects</a></li>
+					<li><a href="#">Services</a></li>
+					<li><a href="#">Portfolio</a></li>
 					<li><a href="#">Contact</a></li>
 				</ul>
 			</nav>
 		</header>
 
-		<section class="hero">
-			<div class="hero-text">
-				<h2>Welcome to My Creative Website</h2>
-				<p>
-					This project shows how a student can style a website using
-					<span class="highlight">CSS</span> beautifully.
-				</p>
-				<button class="btn">Explore More</button>
-			</div>
-			<div class="hero-img">
-				<img src="Ron.jpeg" alt="Example photo" />
+		<!-- Task 1: Card Row -->
+		<section class="card-section">
+			<h2>Our Services</h2>
+			<div class="card-container">
+				<div class="card">
+					<img src="photo1.jpeg" width="300" height="200" alt="Web Design" />
+					<h3>Web Design</h3>
+					<p>
+						We create beautiful, responsive websites that work perfectly on all
+						devices.
+					</p>
+					<button>Learn More</button>
+				</div>
+				<div class="card">
+					<img src="photo2.jpeg" width="300" height="200" alt="Development" />
+					<h3>Development</h3>
+					<p>
+						Our developers build robust applications using the latest
+						technologies.
+					</p>
+					<button>Learn More</button>
+				</div>
+				<div class="card">
+					<img src="photo3.jpeg" width="300" height="200" alt="SEO" />
+					<h3>SEO Optimization</h3>
+					<p>
+						Improve your search engine rankings with our proven SEO strategies.
+					</p>
+					<button>Learn More</button>
+				</div>
 			</div>
 		</section>
 
-		<main class="container">
-			<h2 class="internal-heading">This Heading Uses Internal CSS</h2>
+		<!-- Part 2: Grid System -->
 
-			<section class="cards">
-				<div class="card">
-					<h3>Box Model</h3>
+		<!-- Task 2: Page Layout with Grid Areas -->
+		<section class="grid-layout">
+			<h2>Grid Layout Example</h2>
+			<div class="grid-container">
+				<header class="grid-header">Header</header>
+				<aside class="grid-sidebar">Sidebar</aside>
+				<main class="grid-main">Main Content</main>
+				<footer class="grid-footer">Footer</footer>
+			</div>
+		</section>
+
+		<!-- Task 3: Image Gallery -->
+		<section class="gallery-section">
+			<h2>Image Gallery</h2>
+			<div class="gallery-container">
+				<div class="gallery-item">
+					<img src="photo4.jpeg" width="300" height="200" widalt="Image 1" />
+					<div class="caption">Beautiful Landscape</div>
+				</div>
+				<div class="gallery-item">
+					<img src="photo5.jpeg" width="300" height="200" widalt="Image 1" />
+					<div class="caption">City View</div>
+				</div>
+				<div class="gallery-item">
+					<img src="photo6.jpeg" width="300" height="200" widalt="Image 1" />
+					<div class="caption">Mountain Range</div>
+				</div>
+				<div class="gallery-item">
+					<img src="photo7.jpeg" width="300" height="200" widalt="Image 1" />
+					<div class="caption">Ocean Waves</div>
+				</div>
+				<div class="gallery-item">
+					<img src="photo8.jpeg" width="300" height="200" widalt="Image 1" />
+					<div class="caption">Forest Path</div>
+				</div>
+				<div class="gallery-item">
+					<img src="photo9.jpeg" width="300" height="200" widalt="Image 1" />
+					<div class="caption">Desert Sunset</div>
+				</div>
+				<div class="gallery-item">
+					<img src="photo10.jpeg" width="300" height="200" widalt="Image 1" />
+					<div class="caption">Winter Wonderland</div>
+				</div>
+				<div class="gallery-item">
+					<img src="photo11.jpeg" width="300" height="200" widalt="Image 1" />
+					<div class="caption">Autumn Colors</div>
+				</div>
+				<div class="gallery-item">
+					<img src="photo12.jpeg" width="300" height="200" widalt="Image 1" />
+					<div class="caption">Spring Blossoms</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Part 3: Combining Flexbox & Grid -->
+
+		<!-- Task 4: Portfolio Page -->
+		<div class="portfolio-container">
+			<header class="portfolio-header">
+				<div class="portfolio-logo">
+					<h2>My Portfolio</h2>
+				</div>
+				<nav class="portfolio-nav">
+					<ul>
+						<li><a href="#">Home</a></li>
+						<li><a href="#">Projects</a></li>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Contact</a></li>
+					</ul>
+				</nav>
+			</header>
+
+			<main class="portfolio-main">
+				<section class="projects">
+					<h2>My Projects</h2>
+					<div class="project-cards">
+						<div class="project-card">
+							<h3>E-commerce Website</h3>
+							<p>
+								A fully responsive e-commerce platform with payment integration.
+							</p>
+							<button>View Project</button>
+						</div>
+						<div class="project-card">
+							<h3>Task Management App</h3>
+							<p>A productivity app for managing daily tasks and projects.</p>
+							<button>View Project</button>
+						</div>
+						<div class="project-card">
+							<h3>Weather Dashboard</h3>
+							<p>Real-time weather information with interactive maps.</p>
+							<button>View Project</button>
+						</div>
+						<div class="project-card">
+							<h3>Social Media Platform</h3>
+							<p>
+								A community platform for connecting people with similar
+								interests.
+							</p>
+							<button>View Project</button>
+						</div>
+					</div>
+				</section>
+
+				<aside class="portfolio-sidebar">
+					<h3>About Me</h3>
 					<p>
-						Borders, margins, and padding styled with shadows for clean design.
+						I'm a passionate web developer with expertise in modern CSS
+						techniques including Flexbox and Grid.
 					</p>
-				</div>
-				<div class="card">
-					<h3>Positioning</h3>
-					<p>Static, relative, absolute, and fixed positioning in action.</p>
-				</div>
-				<div class="card">
-					<h3>Float & Clear</h3>
-					<p>Left and right floated boxes with clearfix applied.</p>
-				</div>
-			</section>
+					<h3>Skills</h3>
+					<ul>
+						<li>HTML5 & CSS3</li>
+						<li>JavaScript</li>
+						<li>Responsive Design</li>
+						<li>UI/UX Principles</li>
+					</ul>
+				</aside>
+			</main>
 
-			<section class="float-demo">
-				<h2>Float and Clear Example</h2>
-				<div class="float-box left">Left Box</div>
-				<div class="float-box right">Right Box</div>
-				<div class="clearfix"></div>
-			</section>
-
-			<section class="boxmodel-demo">
-				<h2>Box Model Example</h2>
-				<div class="box">Content with padding, border, and margin</div>
-			</section>
-
-			<section class="sizing">
-				<h2 style="font-size: 20px">Heading with px</h2>
-				<h2 style="font-size: 150%">Heading with %</h2>
-				<h2 style="font-size: 2em">Heading with em</h2>
-				<h3 style="font-size: 2rem">Heading with rem</h3>
-				<img src="Ron.jpeg" alt="Example image" />
-			</section>
-
-			<section class="positions container">
-				<h2>CSS Positioning</h2>
-				<p class="pos-intro">
-					В CSS свойство <code>position</code> управляет расположением элементов
-					на странице. Ниже представлены основные типы позиционирования:
-				</p>
-
-				<div class="pos-grid">
-					<div class="pos-card">
-						<h3>Static</h3>
-						<div class="pos-box static">Static Box</div>
-						<p>
-							Это значение по умолчанию. Элемент отображается в нормальном
-							потоке страницы, без смещений.
-						</p>
-					</div>
-
-					<div class="pos-card">
-						<h3>Relative</h3>
-						<div class="pos-box relative">Relative Box</div>
-						<p>
-							Элемент остаётся в потоке, но может быть <b>сдвинут</b> с помощью
-							<code>top</code>, <code>left</code>, <code>right</code>,
-							<code>bottom</code>.
-						</p>
-					</div>
-
-					<div class="pos-card">
-						<h3>Absolute</h3>
-						<div class="pos-box absolute">Absolute Box</div>
-						<p>
-							Элемент <b>удаляется из потока</b> и позиционируется относительно
-							ближайшего предка с <code>position: relative</code>.
-						</p>
-					</div>
-				</div>
-			</section>
-		</main>
-
-		<footer class="footer">
-			<p>
-				&copy; 2025 CSS Assignment Website | Student:
-				<strong>Aitkali Shilten</strong>, Group: <strong>SE-2435</strong>,
-				Astana IT University
-			</p>
-		</footer>
+			<footer class="portfolio-footer">
+				<p>&copy; 2023 My Portfolio. All rights reserved.</p>
+			</footer>
+		</div>
 	</body>
 </html>
